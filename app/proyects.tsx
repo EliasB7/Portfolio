@@ -3,41 +3,131 @@ import { useState } from "react";
 import { Image } from "@nextui-org/image";
 
 export default function Proyects() {
-  const [hovered, setHovered] = useState(false);
-
   return (
     <main>
       <h1 className="text-5xl">Proyectos en los que trabajé</h1>
 
-      <section>
+      <section className="">
         <div className="mt-10 relative w-[400px]">
-          <div
-            className={`relative w-400 h-500 ${hovered ? "hovered" : ""}`}
-            onMouseOver={() => setHovered(true)}
-            onMouseOut={() => setHovered(false)}
-          >
+          <div className="relative w-400 h-500">
             <Image
               src="/TESTIMAGE.webp"
               width={400}
               height={500}
               alt="foto de prueba"
             />
-            {hovered && (
-              <div className="absolute inset-0 text-white bg-black bg-opacity-70">
-                <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
-                <div className="flex">
-                  <img src="/logo1.png" alt="Logo 1" className="w-8 h-8 mr-2" />
-                  <img src="/logo2.png" alt="Logo 2" className="w-8 h-8" />
-                </div>
+            <div className="hover-overlay">
+              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
+              <div className="flex">
+                <img
+                  src="logos/REACT.png"
+                  alt="Logo 1"
+                  className="w-8 h-8 mr-2"
+                />
+                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
               </div>
-            )}
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 relative w-[400px]">
+          <div className="relative w-400 h-500">
+            <Image
+              src="/TESTIMAGE.webp"
+              width={400}
+              height={500}
+              alt="foto de prueba"
+            />
+            <div className="hover-overlay">
+              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
+              <div className="flex">
+                <img
+                  src="logos/REACT.png"
+                  alt="Logo 1"
+                  className="w-8 h-8 mr-2"
+                />
+                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 relative w-[400px]">
+          <div className="relative w-400 h-500">
+            <Image
+              src="/TESTIMAGE.webp"
+              width={400}
+              height={500}
+              alt="foto de prueba"
+            />
+            <div className="hover-overlay">
+              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
+              <div className="flex">
+                <img
+                  src="logos/REACT.png"
+                  alt="Logo 1"
+                  className="w-8 h-8 mr-2"
+                />
+                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 relative w-[400px]">
+          <div className="relative w-400 h-500">
+            <Image
+              src="/TESTIMAGE.webp"
+              width={400}
+              height={500}
+              alt="foto de prueba"
+            />
+            <div className="hover-overlay">
+              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
+              <div className="flex">
+                <img
+                  src="logos/REACT.png"
+                  alt="Logo 1"
+                  className="w-8 h-8 mr-2"
+                />
+                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <style jsx>{`
-        .hovered {
-          background: transparent;
+        .hover-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: white;
+          opacity: 0; /* Inicialmente transparente */
+          transform: scale(0.8); /* Inicialmente reducido en escala */
+          transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
+        }
+
+        .hover-overlay h2 {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+
+        .hover-overlay img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0.25rem;
+        }
+
+        .relative:hover .hover-overlay {
+          opacity: 1; /* Al hacer hover, muestra el overlay */
+          transform: scale(1); /* Al hacer hover, escala a tamaño completo */
         }
       `}</style>
     </main>
