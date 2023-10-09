@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Image } from "@nextui-org/image";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Proyects() {
   return (
@@ -20,7 +21,7 @@ export default function Proyects() {
               <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
               <div className="flex">
                 <img
-                  src="logos/REACT.png"
+                  src="logos/angular.png"
                   alt="Logo 1"
                   className="w-8 h-8 mr-2"
                 />
@@ -29,6 +30,7 @@ export default function Proyects() {
             </div>
           </div>
         </div>
+
         <div className="mt-10 relative w-[400px]">
           <div className="relative w-400 h-500">
             <Image
@@ -50,6 +52,7 @@ export default function Proyects() {
             </div>
           </div>
         </div>
+
         <div className="mt-10 relative w-[400px]">
           <div className="relative w-400 h-500">
             <Image
@@ -71,6 +74,7 @@ export default function Proyects() {
             </div>
           </div>
         </div>
+
         <div className="mt-10 relative w-[400px]">
           <div className="relative w-400 h-500">
             <Image
