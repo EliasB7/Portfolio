@@ -2,101 +2,138 @@
 import { useState } from "react";
 import { Image } from "@nextui-org/image";
 import { motion, useAnimation } from "framer-motion";
+import { Reveal } from "./reveal";
 
 export default function Proyects() {
   return (
     <main>
-      <h1 className="text-5xl">Proyectos en los que trabajé</h1>
+      <Reveal>
+        <h1 className="text-5xl">Proyectos en los que trabajé</h1>
+      </Reveal>
 
-      <section className="">
-        <div className="mt-10 relative w-[400px]">
-          <div className="relative w-400 h-500">
-            <Image
-              src="/TESTIMAGE.webp"
-              width={400}
-              height={500}
-              alt="foto de prueba"
-            />
-            <div className="hover-overlay">
-              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
-              <div className="flex">
-                <img
-                  src="logos/angular.png"
-                  alt="Logo 1"
-                  className="w-8 h-8 mr-2"
+      <Reveal>
+        <section className="">
+          <Reveal>
+            <div className="mt-10 relative w-[400px]">
+              <div className="relative w-400 h-500">
+                <Image
+                  src="/TESTIMAGE.webp"
+                  width={400}
+                  height={500}
+                  alt="foto de prueba"
                 />
-                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">
+                    Nombre del proyecto
+                  </h2>
+                  <div className="flex">
+                    <img
+                      src="logos/angular.png"
+                      alt="Logo 1"
+                      className="w-8 h-8 mr-2"
+                    />
+                    <img
+                      src="logos/MONGO.png"
+                      alt="Logo 2"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Reveal>
 
-        <div className="mt-10 relative w-[400px]">
-          <div className="relative w-400 h-500">
-            <Image
-              src="/TESTIMAGE.webp"
-              width={400}
-              height={500}
-              alt="foto de prueba"
-            />
-            <div className="hover-overlay">
-              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
-              <div className="flex">
-                <img
-                  src="logos/REACT.png"
-                  alt="Logo 1"
-                  className="w-8 h-8 mr-2"
+          <Reveal>
+            <div className="mt-10 relative w-[400px]">
+              <div className="relative w-400 h-500">
+                <Image
+                  src="/TESTIMAGE.webp"
+                  width={400}
+                  height={500}
+                  alt="foto de prueba"
                 />
-                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">
+                    Nombre del proyecto
+                  </h2>
+                  <div className="flex">
+                    <img
+                      src="logos/REACT.png"
+                      alt="Logo 1"
+                      className="w-8 h-8 mr-2"
+                    />
+                    <img
+                      src="logos/MONGO.png"
+                      alt="Logo 2"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Reveal>
 
-        <div className="mt-10 relative w-[400px]">
-          <div className="relative w-400 h-500">
-            <Image
-              src="/TESTIMAGE.webp"
-              width={400}
-              height={500}
-              alt="foto de prueba"
-            />
-            <div className="hover-overlay">
-              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
-              <div className="flex">
-                <img
-                  src="logos/REACT.png"
-                  alt="Logo 1"
-                  className="w-8 h-8 mr-2"
+          <Reveal>
+            <div className="mt-10 relative w-[400px]">
+              <div className="relative w-400 h-500">
+                <Image
+                  src="/TESTIMAGE.webp"
+                  width={400}
+                  height={500}
+                  alt="foto de prueba"
                 />
-                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">
+                    Nombre del proyecto
+                  </h2>
+                  <div className="flex">
+                    <img
+                      src="logos/REACT.png"
+                      alt="Logo 1"
+                      className="w-8 h-8 mr-2"
+                    />
+                    <img
+                      src="logos/MONGO.png"
+                      alt="Logo 2"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+          </Reveal>
 
-        <div className="mt-10 relative w-[400px]">
-          <div className="relative w-400 h-500">
-            <Image
-              src="/TESTIMAGE.webp"
-              width={400}
-              height={500}
-              alt="foto de prueba"
-            />
-            <div className="hover-overlay">
-              <h2 className="text-2xl font-bold mb-2">Nombre del proyecto</h2>
-              <div className="flex">
-                <img
-                  src="logos/REACT.png"
-                  alt="Logo 1"
-                  className="w-8 h-8 mr-2"
+          <Reveal>
+            <div className="mt-10 relative w-[400px]">
+              <div className="relative w-400 h-500">
+                <Image
+                  src="/TESTIMAGE.webp"
+                  width={400}
+                  height={500}
+                  alt="foto de prueba"
                 />
-                <img src="logos/MONGO.png" alt="Logo 2" className="w-8 h-8" />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">
+                    Nombre del proyecto
+                  </h2>
+                  <div className="flex">
+                    <img
+                      src="logos/REACT.png"
+                      alt="Logo 1"
+                      className="w-8 h-8 mr-2"
+                    />
+                    <img
+                      src="logos/MONGO.png"
+                      alt="Logo 2"
+                      className="w-8 h-8"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </Reveal>
+        </section>
+      </Reveal>
 
       <style jsx>{`
         .hover-overlay {
