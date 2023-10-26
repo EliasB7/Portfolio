@@ -40,7 +40,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-xl"
         >
-          Tambien puedes ver mas de mi en las siguientes redes:
+          Tambien puedes encontrarme en las siguientes redes:
         </motion.p>
         <motion.p
           initial={{ x: -1200 }}
