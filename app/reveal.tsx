@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import { animateScroll } from "react-scroll";
 
 interface Props {
   children: JSX.Element;
@@ -47,10 +48,10 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
           position: "absolute",
           top: 4,
           bottom: 4,
-          left: 0,
-          right: 0,
+          left: 4,
+          right: 4,
           background: "#F59E0B",
-          zIndex: 20,
+          zIndex: 30,
         }}
       />
     </div>

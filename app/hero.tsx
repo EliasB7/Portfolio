@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <main className="flex mt-20 ml-22 justify-center">
-      <motion.section className="flex items-center flex-col justify-center gap-5 text-center w-2/5 mb-40 ">
+    <main id="sobre-mi" className="flex mt-20 ml-22 justify-center sm:ml-50">
+      <motion.section className="flex items-center flex-col justify-center gap-4 text-center w-2/5 mb-40 ">
         <motion.h1
           initial={{ x: -1200 }}
           animate={{ x: 0 }}
@@ -23,11 +23,32 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-xl"
         >
-          Full Stack Developer Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Fugiat dicta suscipit maiores doloribus illo?
-          Molestias soluta impedit maiores, repudiandae excepturi consectetur
-          reiciendis natus dolore? Voluptates velit aspernatur aliquid optio
-          maiores!
+          Full Stack Web Developer.
+        </motion.p>
+        <motion.p
+          initial={{ x: -1200 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-xl"
+        >
+          Puedes conocer mas de mi en los distintos apartados de este
+          portafolio!
+        </motion.p>
+        <motion.p
+          initial={{ x: -1200 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-xl"
+        >
+          Tambien puedes ver mas de mi en las siguientes redes:
+        </motion.p>
+        <motion.p
+          initial={{ x: -1200 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-3xl"
+        >
+          👇
         </motion.p>
 
         <li className="flex gap-10">
@@ -59,10 +80,11 @@ export default function Hero() {
         animate={{ scale: 1 }}
       >
         <Image
-          src="/zepeto_photo_1696454182076.png"
+          src="avatar/zepeto_photo_1696454182076.png"
           alt="mifoto"
           height={500}
           width={500}
+          className="hidden lg:block"
         />
       </motion.section>
     </main>

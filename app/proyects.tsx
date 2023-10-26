@@ -6,136 +6,231 @@ import { Reveal } from "./reveal";
 
 export default function Proyects() {
   return (
-    <main>
+    <main className="mt-40  justify-center" id="proyectos">
       <Reveal>
-        <h1 className="text-5xl">Proyectos en los que trabajé</h1>
+        <h1 className="text-5xl 2xl:ml-80">Proyectos en los que trabajé</h1>
       </Reveal>
 
       <Reveal>
-        <section className="">
-          <Reveal>
-            <div className="mt-10 relative w-[400px]">
-              <div className="relative w-400 h-500">
+        <section className="flex justify-center 2xl:ml-80 lg:ml-20 mt-4">
+          <div className="project-container flex flex-col items-center justify-center">
+            <div className="project">
+              <div className="relative">
                 <Image
-                  src="/TESTIMAGE.webp"
-                  width={400}
-                  height={500}
+                  src="proyects/DRINKIFY.png"
+                  width={1200}
+                  style={{ height: "550px" }}
                   alt="foto de prueba"
                 />
                 <div className="hover-overlay">
-                  <h2 className="text-2xl font-bold mb-2">
-                    Nombre del proyecto
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-2">DRINKIFY</h2>
                   <div className="flex">
                     <img
-                      src="logos/angular.png"
+                      src="logos/ANGULAR.png"
                       alt="Logo 1"
-                      className="w-8 h-8 mr-2"
+                      style={{ width: "80px", height: "80px" }}
                     />
                     <img
-                      src="logos/MONGO.png"
-                      alt="Logo 2"
-                      className="w-8 h-8"
+                      src="logos/TS.png"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
                     />
+                    <img
+                      src="logos/MONGO.svg"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/NEST.svg"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                  </div>
+                  <div className=" mt-10 flex gap-5">
+                    <button>REPO</button>
+                    <button>DEPLOY</button>
                   </div>
                 </div>
               </div>
             </div>
-          </Reveal>
 
-          <Reveal>
-            <div className="mt-10 relative w-[400px]">
-              <div className="relative w-400 h-500">
+            <div className="project">
+              <div className="mt-10 relative">
                 <Image
-                  src="/TESTIMAGE.webp"
-                  width={400}
-                  height={500}
+                  src="proyects/SALVANDOHUELLAS.png"
+                  width={1200}
+                  style={{ height: "550px" }}
                   alt="foto de prueba"
                 />
+
                 <div className="hover-overlay">
-                  <h2 className="text-2xl font-bold mb-2">
-                    Nombre del proyecto
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-2">SALVANDO HUELLAS</h2>
                   <div className="flex">
                     <img
                       src="logos/REACT.png"
                       alt="Logo 1"
-                      className="w-8 h-8 mr-2"
+                      style={{ width: "80px", height: "80px" }}
                     />
                     <img
-                      src="logos/MONGO.png"
+                      src="logos/REDUX.png"
                       alt="Logo 2"
-                      className="w-8 h-8"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/POSTGRE.png"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/NODE.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/EXPRESS.PNG"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
                     />
                   </div>
                 </div>
               </div>
             </div>
-          </Reveal>
 
-          <Reveal>
-            <div className="mt-10 relative w-[400px]">
-              <div className="relative w-400 h-500">
+            <div className="project">
+              <div className="mt-10 relative">
                 <Image
-                  src="/TESTIMAGE.webp"
-                  width={400}
-                  height={500}
+                  src="proyects/COUNTRIES.png"
+                  width={1200}
+                  style={{ height: "550px" }}
                   alt="foto de prueba"
                 />
                 <div className="hover-overlay">
-                  <h2 className="text-2xl font-bold mb-2">
-                    Nombre del proyecto
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-2">PI-COUNTRIES</h2>
                   <div className="flex">
                     <img
                       src="logos/REACT.png"
                       alt="Logo 1"
-                      className="w-8 h-8 mr-2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+
+                    <img
+                      src="logos/NODE.png"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
                     />
                     <img
-                      src="logos/MONGO.png"
+                      src="logos/REDUX.png"
                       alt="Logo 2"
-                      className="w-8 h-8"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/POSTGRE.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/EXPRESS.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
                     />
                   </div>
                 </div>
               </div>
             </div>
-          </Reveal>
 
-          <Reveal>
-            <div className="mt-10 relative w-[400px]">
-              <div className="relative w-400 h-500">
+            <div className="project">
+              <div className="mt-10 relative">
                 <Image
-                  src="/TESTIMAGE.webp"
-                  width={400}
-                  height={500}
+                  src="proyects/STARBUCKS.png"
+                  width={1200}
+                  style={{ height: "550px" }}
                   alt="foto de prueba"
                 />
                 <div className="hover-overlay">
                   <h2 className="text-2xl font-bold mb-2">
-                    Nombre del proyecto
+                    STARBUCKS HOMEPAGE RECREATION
                   </h2>
                   <div className="flex">
                     <img
-                      src="logos/REACT.png"
+                      src="logos/HTML.png"
                       alt="Logo 1"
-                      className="w-8 h-8 mr-2"
+                      style={{ width: "80px", height: "80px" }}
                     />
                     <img
-                      src="logos/MONGO.png"
+                      src="logos/CSS.png"
                       alt="Logo 2"
-                      className="w-8 h-8"
+                      style={{ width: "80px", height: "80px" }}
                     />
                   </div>
                 </div>
               </div>
             </div>
-          </Reveal>
+
+            <div className="project">
+              <div className="mt-10 relative">
+                <Image
+                  src="proyects/PORTFOLIO.png"
+                  width={1200}
+                  style={{ height: "550px" }}
+                  alt="foto de prueba"
+                />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">PORTFOLIO </h2>
+                  <div className="flex">
+                    <img
+                      src="logos/HTML.png"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/CSS.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="project">
+              <div className="mt-10 relative">
+                <Image
+                  src="proyects/CALCULATOR.png"
+                  width={1200}
+                  style={{ height: "550px" }}
+                  alt="foto de prueba"
+                />
+                <div className="hover-overlay">
+                  <h2 className="text-2xl font-bold mb-2">CALCJS</h2>
+                  <div className="flex">
+                    <img
+                      src="logos/HTML.png"
+                      alt="Logo 1"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/CSS.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                    <img
+                      src="logos/JS.png"
+                      alt="Logo 2"
+                      style={{ width: "80px", height: "80px" }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </Reveal>
 
       <style jsx>{`
+        .project {
+          margin-bottom: 20px;
+        }
+
         .hover-overlay {
           position: absolute;
           top: 0;
