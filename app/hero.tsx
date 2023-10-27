@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <main id="sobre-mi" className="flex mt-20 ml-22 justify-center sm:ml-50">
+    <main
+      id="inicio"
+      className="flex md:mt-20 xl:mt-20 2xl:mt-20 ml-22 justify-center sm:ml-50 mt-40"
+    >
       <motion.section className="flex items-center flex-col justify-center gap-4 text-center w-2/5 mb-40 ">
         <motion.h1
           initial={{ x: -1200 }}
@@ -15,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.7 }}
           className="text-8xl"
         >
-          Hola, soy <span className="text-amber-500 ">Elias</span>.
+          Hola, soy <span className="text-amber-500 ">ElÍas</span>.
         </motion.h1>
         <motion.p
           initial={{ x: -1200 }}

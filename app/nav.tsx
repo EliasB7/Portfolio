@@ -41,7 +41,7 @@ export default function Nav() {
       animate={controls}
     >
       <motion.h1
-        className="text-2xl ml-5 font-extrabold text-amber-500"
+        className="text-xl ml-5 font-extrabold text-amber-500 "
         initial={{ scale: 0 }}
         transition={{ duration: 0.5 }}
         animate={{ scale: 1 }}
@@ -60,7 +60,7 @@ export default function Nav() {
             initial={{ scale: 0 }}
             transition={{ duration: 0.5 }}
             animate={{ scale: 1 }}
-            className="border-b-2 border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out hover:text-amber-500"
+            className="border-b-2 text-xs 2xl:text-sm xl:text-sm md:text-lg mr-3  border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out hover:text-amber-500"
           >
             Inicio
           </motion.a>
@@ -71,9 +71,9 @@ export default function Nav() {
             initial={{ scale: 0 }}
             transition={{ duration: 0.7 }}
             animate={{ scale: 1 }}
-            className="border-b-2 border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out text-xs sm:text-base hover:text-amber-500"
+            className="border-b-2 text-xs 2xl:text-sm xl:text-sm md:text-lg mr-3 border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out hover:text-amber-500"
           >
-            Sobre Mi
+            Sobre Mí
           </motion.a>
         </li>
         <li>
@@ -82,23 +82,22 @@ export default function Nav() {
             initial={{ scale: 0 }}
             transition={{ duration: 0.8 }}
             animate={{ scale: 1 }}
-            className="border-b-2 border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out hover:text-amber-500"
+            className="border-b-2 text-xs 2xl:text-sm xl:text-sm md:text-lg mr-3 border-transparent hover:border-white transition-all duration-300 ease-in-out hover:ease-in-out hover:text-amber-500"
           >
             Proyectos
           </motion.a>
         </li>
       </motion.ul>
-      <ul className="items-center sm:items-start">
-        <motion.a
-          onClick={() => handleClick("contactame")}
-          initial={{ scale: 0 }}
-          transition={{ duration: 0.6 }}
-          animate={{ scale: 1 }}
-          className="mr-5 text-amber-500 font-extrabold hover:text-white border-b-2 border-transparent hover:border-amber-500 transition-all duration-300 ease-in-out hover:ease-in-out text-xs sm:text-base"
-        >
-          Contactame
-        </motion.a>
-      </ul>
+
+      <motion.h1
+        initial={{ scale: 0 }}
+        transition={{ duration: 0.5 }}
+        animate={{ scale: 1.4 }}
+        onClick={() => handleClick("contactame")}
+        className="mr-5 md:mr-8 text-sm text-amber-500 font-extrabold hover:text-white border-b-2 border-transparent hover:border-amber-500 transition-all duration-300 ease-in-out hover:ease-in-out "
+      >
+        Contactame
+      </motion.h1>
     </motion.nav>
   );
 }

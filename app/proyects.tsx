@@ -6,14 +6,14 @@ import { Reveal } from "./reveal";
 
 export default function Proyects() {
   return (
-    <main className="mt-40  justify-center" id="proyectos">
+    <main id="proyectos">
       <Reveal>
-        <h1 className="text-5xl 2xl:ml-80">Proyectos en los que trabajé</h1>
+        <h1 className="text-6xl 2xl:ml-80 ">Proyectos en los que trabajé</h1>
       </Reveal>
 
       <Reveal>
-        <section className="flex justify-center 2xl:ml-80 lg:ml-20 mt-4">
-          <div className="project-container flex flex-col items-center justify-center">
+        <section className="mt-7">
+          <div className="project-container flex flex-col items-center justify-center md:ml-3 ">
             <div className="project">
               <div className="relative">
                 <Image
@@ -38,6 +38,7 @@ export default function Proyects() {
                     <img
                       src="logos/MONGO.svg"
                       alt="Logo 2"
+                      className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
                     <img
@@ -47,8 +48,12 @@ export default function Proyects() {
                     />
                   </div>
                   <div className=" mt-10 flex gap-5">
-                    <button>REPO</button>
-                    <button>DEPLOY</button>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      REPO
+                    </a>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      DEPLOY
+                    </a>
                   </div>
                 </div>
               </div>
@@ -71,11 +76,7 @@ export default function Proyects() {
                       alt="Logo 1"
                       style={{ width: "80px", height: "80px" }}
                     />
-                    <img
-                      src="logos/REDUX.png"
-                      alt="Logo 2"
-                      style={{ width: "80px", height: "80px" }}
-                    />
+
                     <img
                       src="logos/POSTGRE.png"
                       alt="Logo 1"
@@ -84,13 +85,26 @@ export default function Proyects() {
                     <img
                       src="logos/NODE.png"
                       alt="Logo 2"
+                      className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
                     <img
                       src="logos/EXPRESS.PNG"
                       alt="Logo 1"
+                      className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
+                  </div>
+                  <div className=" mt-10 flex gap-5">
+                    <a
+                      href="https://github.com/EliasB7/PF_salvando_huellas/tree/main"
+                      className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black"
+                    >
+                      REPO
+                    </a>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      DEPLOY
+                    </a>
                   </div>
                 </div>
               </div>
@@ -116,13 +130,10 @@ export default function Proyects() {
                     <img
                       src="logos/NODE.png"
                       alt="Logo 1"
+                      className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
-                    <img
-                      src="logos/REDUX.png"
-                      alt="Logo 2"
-                      style={{ width: "80px", height: "80px" }}
-                    />
+
                     <img
                       src="logos/POSTGRE.png"
                       alt="Logo 2"
@@ -131,8 +142,20 @@ export default function Proyects() {
                     <img
                       src="logos/EXPRESS.png"
                       alt="Logo 2"
+                      className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
+                  </div>
+                  <div className=" mt-10 flex gap-5">
+                    <a
+                      href="https://github.com/EliasB7/PI-COUNTRIES"
+                      className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black"
+                    >
+                      REPO
+                    </a>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      DEPLOY
+                    </a>
                   </div>
                 </div>
               </div>
@@ -162,6 +185,17 @@ export default function Proyects() {
                       style={{ width: "80px", height: "80px" }}
                     />
                   </div>
+                  <div className=" mt-10 flex gap-5">
+                    <a
+                      href="https://github.com/EliasB7/STARBUCKS-HOMEPAGE-RECREATION"
+                      className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black"
+                    >
+                      REPO
+                    </a>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      DEPLOY
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,15 +212,23 @@ export default function Proyects() {
                   <h2 className="text-2xl font-bold mb-2">PORTFOLIO </h2>
                   <div className="flex">
                     <img
-                      src="logos/HTML.png"
+                      src="logos/NEXTJS.png"
                       alt="Logo 1"
                       style={{ width: "80px", height: "80px" }}
                     />
                     <img
-                      src="logos/CSS.png"
+                      src="logos/TAILWIND.png"
                       alt="Logo 2"
                       style={{ width: "80px", height: "80px" }}
                     />
+                  </div>
+                  <div className=" mt-10 flex gap-5">
+                    <a
+                      href="https://github.com/EliasB7/Portfolio"
+                      className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black"
+                    >
+                      REPO
+                    </a>
                   </div>
                 </div>
               </div>
@@ -219,6 +261,17 @@ export default function Proyects() {
                       style={{ width: "80px", height: "80px" }}
                     />
                   </div>
+                  <div className=" mt-10 flex gap-5">
+                    <a
+                      href="https://github.com/EliasB7/CalcJS"
+                      className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black"
+                    >
+                      REPO
+                    </a>
+                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                      DEPLOY
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -244,8 +297,8 @@ export default function Proyects() {
           justify-content: center;
           text-align: center;
           color: white;
-          opacity: 0; /* Inicialmente transparente */
-          transform: scale(0.8); /* Inicialmente reducido en escala */
+          opacity: 0;
+          transform: scale(0.8);
           transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
         }
 
@@ -262,8 +315,15 @@ export default function Proyects() {
         }
 
         .relative:hover .hover-overlay {
-          opacity: 1; /* Al hacer hover, muestra el overlay */
-          transform: scale(1); /* Al hacer hover, escala a tamaño completo */
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        @media (max-width: 768px) {
+          .relative:hover .hover-overlay {
+            opacity: 1;
+            transform: scale(1);
+          }
         }
       `}</style>
     </main>
