@@ -6,14 +6,14 @@ import { Reveal } from "./reveal";
 
 export default function Proyects() {
   return (
-    <main id="proyectos">
+    <main id="proyectos" className="flex flex-col items-center">
       <Reveal>
-        <h1 className="text-6xl 2xl:ml-80 ">Proyectos en los que trabajé</h1>
+        <h1 className="text-6xl  ">Proyectos en los que trabajé</h1>
       </Reveal>
 
       <Reveal>
         <section className="mt-7">
-          <div className="project-container flex flex-col items-center justify-center md:ml-3 ">
+          <div className="project-container flex flex-col items-center justify-center mx-auto 2xl:mx-0">
             <div className="project">
               <div className="relative">
                 <Image
