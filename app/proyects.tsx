@@ -88,12 +88,6 @@ export default function Proyects() {
                       className="bg-white"
                       style={{ width: "80px", height: "80px" }}
                     />
-                    <img
-                      src="logos/EXPRESS.PNG"
-                      alt="Logo 1"
-                      className="bg-white"
-                      style={{ width: "80px", height: "80px" }}
-                    />
                   </div>
                   <div className=" mt-10 flex gap-5">
                     <a
