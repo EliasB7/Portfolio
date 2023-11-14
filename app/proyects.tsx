@@ -51,9 +51,9 @@ export default function Proyects() {
                     <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       REPO
                     </a>
-                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                    {/* <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       DEPLOY
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -96,9 +96,9 @@ export default function Proyects() {
                     >
                       REPO
                     </a>
-                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                    {/* <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       DEPLOY
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -147,9 +147,9 @@ export default function Proyects() {
                     >
                       REPO
                     </a>
-                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                    {/* <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       DEPLOY
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -186,9 +186,9 @@ export default function Proyects() {
                     >
                       REPO
                     </a>
-                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                    {/* <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       DEPLOY
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -262,9 +262,9 @@ export default function Proyects() {
                     >
                       REPO
                     </a>
-                    <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
+                    {/* <a className="bg-amber-500 rounded p-2 hover:bg-white hover:text-black">
                       DEPLOY
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
