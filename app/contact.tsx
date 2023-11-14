@@ -27,10 +27,10 @@ const ContactForm: React.FC = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_p2wuvdm",
-          "template_4ow4whi",
+          "service_2knrx15",
+          "template_rp28cjw",
           form.current,
-          "2_HbBQ0VadvLgJD8U"
+          "LTz4EtfitbHZoTSg7"
         )
         .then(
           (result) => {
