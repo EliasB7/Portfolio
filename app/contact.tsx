@@ -24,6 +24,15 @@ const ContactForm: React.FC = () => {
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
 
+    if (
+      formData.from_name.trim() === "" ||
+      formData.user_email.trim() === "" ||
+      formData.message.trim() === ""
+    ) {
+      window.alert("Por favor, completa todos los campos.");
+      return;
+    }
+
     if (form.current) {
       emailjs
         .sendForm(
@@ -39,12 +48,11 @@ const ContactForm: React.FC = () => {
             resetForm();
           },
           (error) => {
-            console.log(error.text);
+            window.alert(error.text);
           }
         );
     }
   };
-
   const resetForm = () => {
     setFormData({
       from_name: "",
