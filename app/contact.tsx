@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const MAX_MESSAGE_LENGTH = 500;
   const [formData, setFormData] = useState({
     from_name: "",
     user_email: "",
@@ -15,9 +16,11 @@ const ContactForm: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+    const truncatedValue = value.slice(0, MAX_MESSAGE_LENGTH);
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: truncatedValue,
     });
   };
 
@@ -36,6 +39,13 @@ const ContactForm: React.FC = () => {
     if (!isValidEmail(formData.user_email)) {
       window.alert(
         "Por favor, ingresa una dirección de correo electrónico válida."
+      );
+      return;
+    }
+
+    if (formData.message.length > MAX_MESSAGE_LENGTH) {
+      window.alert(
+        `El mensaje no puede tener más de ${MAX_MESSAGE_LENGTH} caracteres.`
       );
       return;
     }
@@ -143,6 +153,7 @@ const ContactForm: React.FC = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              maxLength={MAX_MESSAGE_LENGTH}
               className="shadow appearance-none border w-60 rounded w-full py-5 px-7 text-black leading-tight focus:outline-none focus:shadow-outline"
             ></textarea>
           </div>
