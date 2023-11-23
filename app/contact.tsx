@@ -33,6 +33,13 @@ const ContactForm: React.FC = () => {
       return;
     }
 
+    if (!isValidEmail(formData.user_email)) {
+      window.alert(
+        "Por favor, ingresa una dirección de correo electrónico válida."
+      );
+      return;
+    }
+
     if (form.current) {
       emailjs
         .sendForm(
@@ -53,6 +60,12 @@ const ContactForm: React.FC = () => {
         );
     }
   };
+
+  const isValidEmail = (email: string): boolean => {
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return regex.test(email);
+  };
+
   const resetForm = () => {
     setFormData({
       from_name: "",
